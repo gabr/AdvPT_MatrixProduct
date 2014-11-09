@@ -61,7 +61,7 @@ def getDimension(prompt):
 def getInput(prompt):
         while True:
                 try:
-                        tmp = int(input(prompt))
+                        tmp = float(input(prompt))
                 except:
                         print " ! Error: Wrong type!"
                         continue
@@ -75,7 +75,7 @@ def writeMatrix(matrix):
 
         for r in range(0, matrix.rows):
                 for c in range(0, matrix.columns):
-                        print "%d " % matrix[r][c],
+                        print "%f " % matrix[r][c],
 
                 print #new line after each row
 
